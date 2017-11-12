@@ -1,4 +1,25 @@
-<h3>Your Watchlist</h3>
-<!-- create stock images -->
-<h4>Stock 1</h4>
-<img src="{{url_for('static', filename='graphs/graph1.png')}}" alt="graph1">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Personal Finance App</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Personal Finance App</h1>
+        <h2>Hackital2017</h2>
+      </header>
+      <div class="container">
+        <section>
+	  <h3>Your Watchlist</h3>
+	  {% for stock in watchlist %}
+	  <h4>{{ stock }}</h4>
+	  <img src="{{ url_for('static', filename='graphs/{}.png'.format(stock)) }}" alt="graph1">
+	  {% endfor %}
+        </section>
+      </div>
+    </main>
+
+  </body>
+</html>
