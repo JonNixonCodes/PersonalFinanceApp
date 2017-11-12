@@ -102,7 +102,7 @@ def PrintData(watchlist):
 
 def GraphData(watchlist):
     """Save graphs of data on stocks in watchlist"""
-    graph_dir = "graphs/"    
+    graph_dir = "static/graphs/"    
     all_data = LoadData(watchlist)
     for index,stock in enumerate(watchlist):
         df_price = all_data[stock]['price']
