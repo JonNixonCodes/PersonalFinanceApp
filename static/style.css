@@ -1,0 +1,39 @@
+body {
+  background-color: #EEEEEE;
+  /*#EEE*/
+  padding: 0 30px;
+}
+header {
+  color: #55AA55;
+  font-family: monospace;
+  text-align: center;
+  padding: 20px;
+  /*margin: top right bottom left*/
+  margin: 30px;
+}
+section {
+  padding: 0px 50px;
+}
+section h3 {
+  color: #555555;
+  font-family: monospace;
+  text-align: center;
+}
+section .button {
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  margin: 10px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+li {
+  list-style: none;
+  margin: 10px;
+}
+table {
+  margin: 10px;
+}

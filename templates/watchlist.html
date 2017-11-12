@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Personal Finance App</title>
+    <link rel="stylesheet" href="../static/style.css">
   </head>
   <body>
     <main>
@@ -12,11 +13,17 @@
       </header>
       <div class="container">
         <section>
-	  <h3>Your Watchlist</h3>
-	  {% for stock in watchlist %}
-	  <h4>{{ stock }}</h4>
-	  <img src="{{ url_for('static', filename='graphs/{}.png'.format(stock)) }}" alt="graph1">
-	  {% endfor %}
+          <h3>Your Watchlist</h3>
+          {% for stock in watchlist %}
+          <h4>{{ stock }}</h4>
+          <img src="{{ url_for('static', filename='graphs/{}.png'.format(stock)) }}" alt="graph1">
+          {% endfor %}
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Dividend</th>
+            </tr>
+          </table>
         </section>
       </div>
     </main>
